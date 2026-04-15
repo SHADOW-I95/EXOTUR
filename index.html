@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="eS">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ACCEST/css/stilo.css">
+    <title>EXOTUR</title>
+</head>
+<body>
+
+    <header class="menu">
+        <img src="/ACCEST/img/logo-removebg-preview.png">
+        <nav>
+            <ul class="opciones-menu">
+                <li><a href="#DESTINOS">Destinos</a></li>
+                <li><a href="#CONTACTANOS">Contáctanos</a></li>
+                <button id="ABRIR-MODAL" class="boton-modal">✈ Reserva</button>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="MI-MODAL" class="modal">
+        <button id="CERRAR-MODAL" class="modal-close">✕</button>
+        <form class="form-modal">
+            <div class="modal-header">
+                <p class="modal-tag">Reserva tu aventura</p>
+                <h2>Solicitar cita</h2>
+            </div>
+            <div class="form-grupo">
+                <label for="NOMBRE">Nombre completo</label>
+                <input type="text" placeholder="Ej. Juan Pérez" id="NOMBRE" required>
+            </div>
+            <div class="form-grupo">
+                <label for="EDAD">Edad</label>
+                <input type="number" placeholder="Tu edad" id="EDAD" required>
+            </div>
+            <div class="form-grupo">
+                <label for="NUMERO">Número de teléfono</label>
+                <input type="tel" placeholder="+504 0000-0000" id="NUMERO" required>
+            </div>
+            <div class="form-grupo">
+                <label for="FECHA">Fecha de viaje</label>
+                <input type="date" id="FECHA" required>
+            </div>
+            <div class="form-grupo">
+                <label for="DESTINO">Destino</label>
+                <select id="DESTINO">
+                    <option value="">Selecciona tu destino</option>
+                    <option value="v1">Viaje 1</option>
+                    <option value="v2">Viaje 2</option>
+                    <option value="v3">Viaje 3</option>
+                </select>
+            </div>
+            <div class="form-acciones">
+                <button type="submit" class="btn-enviar">Confirmar reserva</button>
+            </div>
+        </form>
+    </div>
+
+    <main class="info">
+        <div class="tx-total">
+            <div class="a-s">
+                <div class="agencia">
+                    <p>Tu agencia de confianza</p>
+                </div>
+                <div class="eslogan">
+                    <h1><span>Exotur</span><span>Pasión que dura y vive tu aventura.</span></h1>
+                </div>
+            </div>
+            <div class="tx">
+                <div class="tx-ms">
+                    <p>Nuestra Misión es satisfacer con experiencia a nuestros viajeros con experiencias auténticas y
+                        sin dejar de lado la seguridad y bienestar ecológico y personal.</p>
+                </div>
+                <div class="tx-vs">
+                    <p>Nuestra Visión es reestructurar el concepto del turismo sin afectar la flora y fauna del destino
+                        del cliente, convirtiendo los sueños más ambiciosos en experiencias exclusivas y facilitando la
+                        experiencia con innovación tecnológica y seguridad para las personas y su familia.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="div-valores">
+        <p class="tt-valores">Valores</p>
+        <ol>
+            <div class="cd-valores">
+                <li>Sostenibilidad por el medio ambiente</li>
+            </div>
+            <div class="cd-valores">
+                <li>Integridad</li>
+            </div>
+            <div class="cd-valores">
+                <li>Hospitalidad</li>
+            </div>
+            <div class="cd-valores">
+                <li>Seguridad y confianza</li>
+            </div>
+            <div class="cd-valores">
+                <li>Experiencias transformadoras</li>
+            </div>
+        </ol>
+    </div>
+
+    <section id="DESTINOS" class="destinos">
+        <h2>DESTINOS</h2>
+        <div class="grid">
+            <div class="card"><a href="">
+                    <figure><img src="/ACCEST/img/roatan.jpg" alt="">
+                        <figcaption class="card-text">
+                            <h5>roatan</h5>
+                            <p>Precio <span>$999</span></p>
+                        </figcaption>
+                    </figure>
+                </a></div>
+            <div class="card"><a href="">
+                    <figure><img src="/ACCEST/img/ceib.jpg" alt="">
+                        <figcaption class="card-text">
+                            <h5>ceiba</h5>
+                            <p>Precio <span>$999</span></p>
+                        </figcaption>
+                    </figure>
+                </a></div>
+            <div class="card"><a href="">
+                    <figure><img src="/ACCEST/img/copan.jpg" alt="">
+                        <figcaption class="card-text">
+                            <h5>copan</h5>
+                            <p>Precio <span>$999</span></p>
+                        </figcaption>
+                    </figure>
+                </a></div>
+            <div class="card"><a href="">
+                    <figure><img src="/ACCEST/img/tela.jpg" alt="">
+                        <figcaption class="card-text">
+                            <h5>tela</h5>
+                            <p>Precio <span>$999</span></p>
+                        </figcaption>
+                    </figure>
+                </a></div>
+            <div class="card"><a href="">
+                    <figure><img src="/ACCEST/img/lempira.jpg" alt="">
+                        <figcaption class="card-text">
+                            <h5>lempira</h5>
+                            <p>Precio <span>$999</span></p>
+                        </figcaption>
+                    </figure>
+                </a></div>
+            <div class="card"><a href="">
+                    <figure><img src="/ACCEST/img/omoa.jpg" alt="">
+                        <figcaption class="card-text">
+                            <h5>omoa</h5>
+                            <p>Precio <span>$999</span></p>
+                        </figcaption>
+                    </figure>
+                </a></div>
+        </div>
+    </section>
+
+    <section id="CONTACTANOS" class="contactos">
+        <h2>Contáctanos</h2>
+        <div>
+            <a href="">📱 WhatsApp</a>
+            <a href="">📘 Facebook</a>
+            <a href="">📧 Gmail</a>
+        </div>
+    </section>
+
+    <div class="yawe">
+        <footer class="ya-we">
+            <h5>EXOTUR</h5>
+            <h5>Pagos</h5>
+            <h5>Ofertas</h5>
+            <h5>© 2026 EXOTUR</h5>
+            <h5>Shadow</h5>
+        </footer>
+    </div>
+
+    <script src="/ACCEST/js/ke.js"></script>
+
+</body>
+</html>
