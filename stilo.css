@@ -100,7 +100,7 @@ padding: 60px 60px 60px 80px;
 gap: 40px;
 background:
 linear-gradient(135deg, rgba(3, 37, 76, 0.95) 0%, rgba(17, 103, 177, 0.7) 50%, rgba(3, 37, 76, 0.9) 100%),
-url("/ACCEST/img/avion-removebg-preview.png") center/cover no-repeat;
+url("avion-removebg-preview.png") center/cover no-repeat;
 align-items: center;
 position: relative;
 overflow: hidden;
