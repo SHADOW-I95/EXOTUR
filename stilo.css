@@ -718,3 +718,286 @@ animation: fadeInUp 0.8s ease both;
 .tx {
 animation: fadeInUp 0.8s 0.2s ease both;
 }
+
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.a-s { animation: fadeInUp 0.8s ease both; }
+.tx { animation: fadeInUp 0.8s 0.2s ease both; }
+
+/* ===== RESPONSIVE TABLET (max 768px) ===== */
+@media (max-width: 768px) {
+
+    /* MENU */
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+        border-radius: 0 0 16px 16px;
+    }
+
+    .menu img {
+        width: 140px;
+        padding: 6px 16px;
+    }
+
+    .opciones-menu {
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        padding: 8px 16px 12px;
+        width: 100%;
+    }
+
+    .opciones-menu li {
+        padding: 7px 14px;
+        font-size: 0.88rem;
+    }
+
+    .boton-modal {
+        padding: 8px 16px;
+        font-size: 0.88rem;
+    }
+
+    /* HERO */
+    .tx-total {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding: 40px 24px;
+        gap: 28px;
+    }
+
+    .eslogan h1 {
+        font-size: clamp(2rem, 8vw, 2.8rem);
+    }
+
+    /* VALORES */
+    .div-valores {
+        padding: 40px 20px;
+    }
+
+    .div-valores ol {
+        gap: 10px;
+    }
+
+    .cd-valores {
+        padding: 8px 16px;
+    }
+
+    .cd-valores li {
+        font-size: 0.82rem;
+        white-space: normal;
+        text-align: center;
+    }
+
+    /* DESTINOS */
+    .destinos {
+        padding: 40px 20px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    /* CONTACTOS */
+    .contactos {
+        padding: 45px 20px;
+    }
+
+    .contactos div {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .contactos a {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+        padding: 13px 20px;
+    }
+
+    /* FOOTER */
+    .yawe {
+        padding: 18px 20px;
+    }
+
+    .ya-we {
+        gap: 24px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* MODAL */
+    .form-modal {
+        padding: 28px 22px;
+        margin: 0 10px;
+    }
+}
+
+/* ===== RESPONSIVE MÓVIL (max 480px) ===== */
+@media (max-width: 480px) {
+
+    /* MENU */
+    .menu {
+        position: sticky;
+        top: 0;
+    }
+
+    .menu img {
+        width: 120px;
+        padding: 5px 14px;
+    }
+
+    .opciones-menu {
+        gap: 0.5rem;
+        padding: 6px 14px 10px;
+    }
+
+    .opciones-menu li {
+        padding: 6px 12px;
+        font-size: 0.82rem;
+    }
+
+    .boton-modal {
+        padding: 7px 13px;
+        font-size: 0.82rem;
+    }
+
+    /* HERO */
+    .tx-total {
+        padding: 30px 18px;
+        gap: 22px;
+    }
+
+    .agencia {
+        font-size: 0.75rem;
+        padding: 8px 16px;
+    }
+
+    .eslogan h1 {
+        font-size: clamp(1.7rem, 9vw, 2.2rem);
+        line-height: 1.2;
+    }
+
+    .tx-ms,
+    .tx-vs {
+        padding: 22px 18px 18px;
+        border-radius: 16px;
+    }
+
+    .tx-ms p,
+    .tx-vs p {
+        font-size: 0.88rem;
+        line-height: 1.65;
+    }
+
+    /* VALORES */
+    .div-valores {
+        padding: 35px 16px;
+    }
+
+    .tt-valores {
+        font-size: 1.4rem;
+        letter-spacing: 0.1em;
+    }
+
+    .div-valores ol {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .cd-valores {
+        width: 100%;
+        max-width: 320px;
+        border-radius: 12px;
+        padding: 10px 18px;
+    }
+
+    /* DESTINOS */
+    .destinos {
+        padding: 35px 16px;
+    }
+
+    .destinos h2 {
+        font-size: 1.8rem;
+        letter-spacing: 0.1em;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .card figure,
+    .card img {
+        height: 200px;
+    }
+
+    /* Las card-text en móvil siempre visibles */
+    .card .card-text {
+        transform: translateY(0);
+        background: linear-gradient(0deg, rgba(3,37,76,0.95) 0%, rgba(3,37,76,0.4) 100%);
+    }
+
+    /* CONTACTOS */
+    .contactos {
+        padding: 38px 16px;
+    }
+
+    .contactos h2 {
+        font-size: 1.8rem;
+    }
+
+    .contactos a {
+        max-width: 100%;
+        font-size: 0.9rem;
+    }
+
+    /* FOOTER */
+    .yawe {
+        padding: 16px;
+    }
+
+    .ya-we {
+        gap: 16px;
+    }
+
+    .ya-we h5 {
+        font-size: 0.75rem;
+    }
+
+    /* MODAL */
+    .modal {
+        align-items: flex-end;
+        padding: 0;
+    }
+
+    .form-modal {
+        border-radius: 20px 20px 0 0;
+        padding: 28px 20px 32px;
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        max-height: 92vh;
+        overflow-y: auto;
+    }
+
+    .modal-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .modal-close {
+        top: 14px;
+        right: 16px;
+    }
+
+    .form-grupo input,
+    .form-grupo select {
+        font-size: 16px; /* evita zoom en iOS */
+        padding: 13px 14px;
+    }
+}
